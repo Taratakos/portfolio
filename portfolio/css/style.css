@@ -1,0 +1,97 @@
+/* #region Standart styles, обнулення усіх стилів */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: none;
+  /* max-width: 100%; */
+}
+
+h1 h2 h3 h4 h5 h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1;
+  font-family: "Inter", Verdana, sans-serif;
+  font-size: 20px;
+  color: #fff;
+  background-color: #000;
+}
+/* =========================== */
+.wrapper {
+  min-height: 100%;
+  /* overflow: hidden; - щоб не з'являвся горизонтальний скрол */
+  overflow: hidden;
+  display: flex;
+  /* щоб притискати футер до низу сторінки */
+  flex-direction: column;
+}
+/* =========================== */
+.title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.375;
+}
+.title_center {
+  text-align: center;
+}
+@media (max-width: 767.98px) {
+  .title {
+    font-size: 30px;
+  }
+}
+/* =========================== */
+/* =========================== */
+.page {
+  flex: 1 1 auto;
+}
+/* =========================== */
+/* =========================== */
+
+/* Адаптивна сітка. Метод адаптиву по брейкпоінтах. Селектор який шукає входження в назві класів */
+[class*="__container"] {
+  max-width: 1400px;
+  margin: 0 auto;
+  /* відступ безпеки обмежуючий контейнер матиме 1440px замість 1400px */
+  padding: 0 20px;
+}
+@media (max-width: 1399.98px) {
+  [class*="__container"] {
+    max-width: 970px;
+  }
+}
+@media (max-width: 990.98px) {
+  [class*="__container"] {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767.98px) {
+  [class*="__container"] {
+    max-width: none;
+    padding: 0 15px;
+  }
+}
+/* #endregion Standart styles */
+/* ============================= */
