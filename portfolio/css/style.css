@@ -32,8 +32,11 @@ html,
 body {
   height: 100%;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
-  line-height: 1;
+  line-height: 2.5;
   font-family: "Inter", Verdana, sans-serif;
   font-size: 20px;
   color: #fff;
@@ -95,3 +98,36 @@ body {
 }
 /* #endregion Standart styles */
 /* ============================= */
+
+/* #region Header */
+.header {
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 90px;
+  padding: 10px 0;
+}
+.header__logo {
+}
+.header__menu {
+}
+/* ============================= */
+.menu {
+}
+.menu__list {
+  display: flex;
+}
+.menu__item {
+}
+.menu__link {
+  color: inherit;
+  font-size: 20px;
+  font-weight: 400;
+  transition: color 0.3s ease 0s;
+}
+.menu__link:hover {
+  color: #37c7c7;
+}
+/* #endregion Header */
