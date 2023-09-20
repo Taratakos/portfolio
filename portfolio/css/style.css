@@ -74,8 +74,6 @@ body {
 [class*="__container"] {
   max-width: 1400px;
   margin: 0 auto;
-  /* відступ безпеки обмежуючий контейнер матиме 1440px замість 1400px */
-  padding: 0 20px;
 }
 @media (max-width: 1399.98px) {
   [class*="__container"] {
@@ -91,6 +89,8 @@ body {
   [class*="__container"] {
     max-width: none;
     padding: 0 15px;
+    /* відступ безпеки обмежуючий контейнер матиме 1440px замість 1400px */
+    padding: 0 20px;
   }
 }
 /* #endregion Standart styles */
