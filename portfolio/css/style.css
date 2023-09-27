@@ -19,7 +19,7 @@ li {
 }
 
 img {
-  vertical-align: none;
+  /* vertical-align: none; */
   /* max-width: 100%; */
 }
 
@@ -32,9 +32,11 @@ html,
 body {
   height: 100%;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   line-height: 1;
   font-family: "Inter", Verdana, sans-serif;
@@ -42,6 +44,7 @@ body {
   color: #fff;
   background-color: #000;
 }
+
 /* =========================== */
 .wrapper {
   min-height: 100%;
@@ -51,6 +54,7 @@ body {
   /* щоб притискати футер до низу сторінки */
   flex-direction: column;
 }
+
 /* =========================== */
 /* .title {
   font-weight: 600;
@@ -70,6 +74,7 @@ body {
 .page {
   flex: 1 1 auto;
 }
+
 /* =========================== */
 /* =========================== */
 
@@ -78,16 +83,19 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+
 @media (max-width: 1399.98px) {
   [class*="__container"] {
     max-width: 970px;
   }
 }
+
 @media (max-width: 990.98px) {
   [class*="__container"] {
     max-width: 750px;
   }
 }
+
 @media (max-width: 767.98px) {
   [class*="__container"] {
     max-width: none;
@@ -95,6 +103,7 @@ body {
     padding: 0 20px;
   }
 }
+
 /* #endregion Standart styles */
 /* ============================= */
 
@@ -106,6 +115,7 @@ body {
   width: 100%;
   z-index: 10;
 }
+
 .header__container {
   align-items: center;
   display: flex;
@@ -116,30 +126,30 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.header__logo {
-}
+
+.header__logo {}
+
 .header__logo img {
   display: block;
 }
-.header__menu {
-}
+
+.header__menu {}
+
 @media (max-width: 767.98px) {
   .header__container {
     min-height: 0;
     flex-direction: column;
   }
 }
+
 /* ============================= */
-.menu {
-}
 .menu__list {
   display: flex;
   flex-wrap: wrap;
   column-gap: 30px;
   row-gap: 5px;
 }
-.menu__item {
-}
+
 .menu__link {
   /* щоб посилання прийняло загадьний колір шрифта */
   color: inherit;
@@ -147,30 +157,35 @@ body {
   line-height: 50px;
   transition: color 0.3s ease 0s;
 }
+
 .menu__link:hover {
   color: #37c7c7;
   text-decoration: underline;
 }
+
 @media (max-width: 767.98px) {
   .menu__list {
     justify-content: center;
     column-gap: 32px;
     row-gap: 0px;
   }
+
   .menu__link {
     font-size: 18px;
   }
 }
+
 /* #endregion Header */
 /* ============================= */
 
 /* #region Hero */
-.hero-block {
-}
+.hero-block {}
+
 .hero-block__container {
   padding-top: 250px;
   position: relative;
 }
+
 .hero-block__container::after {
   position: absolute;
   background: url("../img/hero/bg.jpg");
@@ -184,18 +199,17 @@ body {
   z-index: -1;
 }
 
-.hero-block__body {
-}
+.hero-block__body {}
 
 .body-hero-block {
   padding-left: 60px;
   max-width: 480px;
 }
-.body-hero-block__content {
-}
 
-.content-hero-block {
-}
+.body-hero-block__content {}
+
+.content-hero-block {}
+
 .content-hero-block__title {
   font-family: Merriweather;
   font-size: 60px;
@@ -203,20 +217,136 @@ body {
   line-height: 120px;
   margin-bottom: 10px;
 }
+
 .content-hero-block__text p {
   font-size: 20px;
   line-height: 40px;
   margin-bottom: 33px;
 }
-.content-hero-block__btn {
-}
 
-.btn {
-}
+.content-hero-block__btn {}
+
+.btn {}
 
 /* #endregion Hero */
 
-/* #region X */
+/* #region Skills */
+.page__skills {}
+
+.skills-block {}
+
+.skills-block__container {}
+
+.skills-block__header {}
+
+.skills-block__title {
+  margin-bottom: 60px;
+}
+
+.title {
+  color: #BDAE82;
+  font-family: Merriweather;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 80px;
+  position: relative;
+}
+
+.title::before {
+  content: '';
+  position: absolute;
+  width: 274px;
+  height: 2px;
+  background-color: #BDAE82;
+  left: 25%;
+  top: 50%;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  width: 274px;
+  height: 2px;
+  background-color: #BDAE82;
+  right: 25%;
+  top: 50%;
+}
+
+.title--center {
+  text-align: center;
+}
+
+.skills-block__row {
+  display: flex;
+}
+
+.skills-block__column {
+  flex: 0 0 25%;
+  padding: 0 20px 8px;
+  ;
+}
+
+.item-skill {}
+
+.item-skill__icon {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.icon-square {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 75px;
+  border-radius: 19px;
+  border: 2px solid #d6caa7;
+}
+
+.ico {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.ico--camera {
+  background-image: url('../img/skills/01.svg');
+  width: 62px;
+  height: 50px;
+}
+
+.item-skill__title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.item-skill__text p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.ico--player {
+  background-image: url('../img/skills/02.svg');
+  width: 60px;
+  height: 50px;
+}
+
+.ico--picture {
+  background-image: url('../img/skills/03.svg');
+  width: 66px;
+  height: 50px;
+}
+
+.ico--microphone {
+  background-image: url('../img/skills/04.svg');
+  width: 32px;
+  height: 50px;
+}
+
 /* #endregion X */
 /* ============================= */
 
