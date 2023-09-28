@@ -9,9 +9,7 @@
   <link rel="manifest" href="/site.webmanifest" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@400;700&family=Roboto&display=swap"
-    rel="stylesheet" />
+
   <link rel="stylesheet" href="css/style.css" />
   <title>Portfolio</title>
 </head>
@@ -20,7 +18,12 @@
     <header class="header">
       <div class="header__container">
         <a href="#!" class="header__logo">
-          <img class="" src="img/logo/logo01.png" alt="logo" />
+          <!-- <svg class="icon-logo">
+            <use xlink:href="./img/logo/sprite.svg#logo-1"></use>
+          </svg> -->
+          <object type="image/svg+xml" data="img/logo/logo-1.svg" class="logo-object">
+            Your browser does not support SVG
+          </object>
         </a>
         <nav class="header__menu menu">
           <ul class="menu__list">
@@ -49,7 +52,7 @@
       </div>
     </header>
     <main class="page">
-      <section class="page__hero hero-block">
+      <!--       <section class="page__hero hero-block">
         <div class="hero-block__container">
           <div class="hero-block__body body-hero-block">
             <div class="body-hero-block__content content-hero-block">
@@ -67,6 +70,8 @@
           </div>
         </div>
       </section>
+      -->
+
 
       <section class="page__skills skills-block">
         <div class="skills-block__container">
@@ -137,6 +142,7 @@
           </div>
         </div>
       </section>
+
     </main>
     <!-- <footer class="footer">footer</footer> -->
   </div>

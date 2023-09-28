@@ -1,3 +1,6 @@
+/* ===== Google fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@400;700&family=Roboto&display=swap');
+
 /* #region Standart styles, обнулення усіх стилів */
 *,
 *::before,
@@ -108,39 +111,29 @@ body {
 /* ============================= */
 
 /* #region Header */
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
+
+.header__logo {
+  display: inline-block;
 }
 
-.header__container {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  column-gap: 10px;
-  row-gap: 15px;
-  min-height: 90px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.logo-svg {
+  cursor: pointer;
 }
 
-.header__logo {}
-
-.header__logo img {
-  display: block;
+.logo-path {
+  transition: all 0.3s ease-out;
 }
 
-.header__menu {}
+.logo-svg:hover .logo-path:hover {
+  fill: #BDAE82;
+}
 
-@media (max-width: 767.98px) {
+/* @media (max-width: 767.98px) {
   .header__container {
     min-height: 0;
     flex-direction: column;
   }
-}
+} */
 
 /* ============================= */
 .menu__list {
