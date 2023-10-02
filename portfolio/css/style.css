@@ -9,6 +9,7 @@
   padding: 0;
   border: none;
   box-sizing: border-box;
+  /* outline: 2px solid green; */
 }
 
 a {
@@ -190,7 +191,6 @@ body {
   background-repeat: no-repeat;
   /* background-position: center; */
   background-size: cover;
-
 }
 
 .hero-block__content {
@@ -218,6 +218,11 @@ body {
   background-color: #BDAE82;
   color: #000;
   padding: 8px 72px 7px 73px;
+  transition: all .3s ease 0s;
+}
+
+.hero-block__btn:hover {
+  color: #fff;
 }
 
 .btn {
@@ -227,47 +232,40 @@ body {
 }
 
 /* #endregion Hero */
+/* ============================= */
 
 /* #region Skills */
 
 .skills-block {
-  padding-top: 100px;
+  padding-top: 145px;
   padding-bottom: 2px;
 }
 
-.skills-block__title {
-  margin-bottom: 60px;
-}
-
-/* .title {
+.title {
   color: #BDAE82;
   font-family: Merriweather;
   font-size: 40px;
   font-weight: 700;
-  line-height: 80px;
-  position: relative;
-} */
-
-/* .title::before {
-  content: '';
-  position: absolute;
-  width: 274px;
-  height: 2px;
-  background-color: #BDAE82;
-  left: 25%;
-  top: 50%;
+  border-bottom: 2px solid #BDAE82;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 0;
 }
 
-.title::after {
-  content: '';
-  position: absolute;
-  width: 274px;
-  height: 2px;
-  background-color: #BDAE82;
-  right: 25%;
-  top: 50%;
-} */
+.skills-block__title span {
+  background: #000;
+  padding: 0 20px;
+}
 
+.skills-block__title {
+  margin-bottom: 85px;
+}
+
+@media (max-width: 767.98px) {
+  .title {
+    max-width: 500px;
+  }
+}
 
 .title--center {
   text-align: center;
@@ -370,68 +368,110 @@ body {
 /* ============================= */
 
 /* #region Portfolio */
-h3 {
-  max-width: 700px;
-  text-align: center;
-  border-bottom: 2px solid #BDAE82;
-  margin: 0 auto;
-  color: #BDAE82;
-  font-family: Merriweather;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 0;
+
+.portfolio {
+  padding-top: 145px;
+  padding-bottom: 2px;
 }
 
-h3 span {
+.portfolio__title span {
   background: #000;
-  padding: 0 10px;
-  /* line-height: 80px; */
-
-
+  padding: 0 20px;
 }
-
-
-/* .test1::before {
-  content: '';
-  position: absolute;
-  /* width: 240px; */
 
 .portfolio__title {
-  max-width: 700px;
-  text-align: center;
-  margin: 0 auto;
-  position: relative;
+  margin-bottom: 95px;
+}
 
+.tabs-portfolio__nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  justify-content: center;
+  column-gap: 5px;
+  row-gap: 10px;
+}
+
+.tabs-portfolio__button {
+  background: transparent;
+  border: 2px solid #BDAE82;
   color: #BDAE82;
-  font-family: Merriweather;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 80px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 40px;
+  padding: 8px 79px 7px;
+  transition: all 0.5s ease 0s;
+}
+
+.tabs-portfolio__button:hover {
+  background-color: #BDAE82;
+  color: #000;
+}
+
+.tabs-portfolio__button.active {
+  background-color: #BDAE82;
+  color: #000;
+}
+
+.item-tabs__items {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+
+.tabs-portfolio__item {
+  display: none;
+}
+
+.tabs-portfolio__item.active {
+  display: block;
+}
+
+.item-tabs__image {
   position: relative;
+  display: block;
+  padding-bottom: 125%;
+  overflow: hidden;
 }
 
-.portfolio__title::before {
-  content: '';
+.item-tabs__image img {
   position: absolute;
-  width: 240px;
-  height: 2px;
-  background-color: #BDAE82;
+  width: 100%;
+  height: 100%;
+  top: 0;
   left: 0;
-  top: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease 0s;
 }
 
-.portfolio__title::after {
-  content: '';
-  position: absolute;
-  width: 240px;
-  height: 2px;
-  background-color: #BDAE82;
-  right: 0;
-  top: 50%;
+.item-tabs__image:hover img {
+  transform: scale(1.1);
 }
-
 
 /* #endregion Portfolio */
+/* ============================= */
+
+/* #region Video */
+.video {
+  padding-top: 145px;
+  padding-bottom: 2px;
+}
+
+.video__title span {
+  background: #000;
+  padding: 0 20px;
+}
+
+.video__title {
+  margin-bottom: 85px;
+}
+
+/* #endregion Video
+/* #endregion X */
+/* ============================= */
+
+/* #region X */
+/* #endregion X */
 /* ============================= */
 
 /* #region X */
